@@ -14,10 +14,11 @@
         save sp, -112, sp
 
         mov A, %i0
-        mov B, %l1
-        add %i0, %l1, %o0
+        mov B, %l0
+        add %i0, %l0, %o0
         @my_aff_reg %o0
 
-        restore
+		ret
+        	restore
     .endp
 .ends
